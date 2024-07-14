@@ -52,10 +52,7 @@ const FormGroup = styled.div`
   margin-bottom: 1rem;
 `;
 
-const FormLabel = styled.label`
-  font-size: 1rem;
-  margin-bottom: 0.5rem;
-`;
+
 
 const FormInput = styled.input`
   padding: 0.75rem;
