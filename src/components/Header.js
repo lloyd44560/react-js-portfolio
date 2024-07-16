@@ -21,9 +21,27 @@ const NavLink = styled(Link)`
   color: white;
   text-decoration: none;
   margin: 0 1rem;
+  position: relative;
+  transition: color 0.3s ease-in-out;
 
   &:hover {
-    text-decoration: underline;
+    color: #61dafb; // Change text color on hover
+  }
+
+  &::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #61dafb;
+    transition: width 0.3s ease-in-out;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+  }
+
+  &:hover::after {
+    width: 100%; // Animate underline on hover
   }
 
   @media (max-width: 768px) {
@@ -73,7 +91,7 @@ const Header = () => {
 
   return (
     <Nav>
-      <h1>My Portfolio</h1>
+      <h1>Web Portfolio</h1>
       <MenuIcon onClick={toggleMenu}>
         {menuOpen ? <FaTimes /> : <FaBars />}
       </MenuIcon>

@@ -26,24 +26,47 @@ const HeroSection = styled.section`
   padding: 2rem;
   background-color: #282c34;
   color: white;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    padding: 1rem;
+  }
 `;
 
 const LeftSection = styled.div`
   max-width: 45%;
+
+  @media (max-width: 768px) {
+    max-width: 100%;
+    text-align: center;
+  }
 `;
 
 const RightSection = styled.div`
   max-width: 45%;
+
+  @media (max-width: 768px) {
+    max-width: 60%;
+    margin-top: 1rem;
+  }
 `;
 
 const BigHeader = styled.h1`
   font-size: 3rem;
   font-weight: bold;
+
+  @media (max-width: 768px) {
+    font-size: 2rem;
+  }
 `;
 
 const SubHeader = styled.h2`
   font-size: 1.5rem;
   margin-top: 0.5rem;
+
+  @media (max-width: 768px) {
+    font-size: 1.2rem;
+  }
 `;
 
 const Paragraph = styled.p`
@@ -51,9 +74,13 @@ const Paragraph = styled.p`
 `;
 
 const Image = styled.img`
-  max-width: 100%;
+  max-width: 80%;
   height: auto;
   border-radius: 50%;
+
+  @media (max-width: 768px) {
+    max-width: 100%;
+  }
 `;
 
 const InfoSection = styled.section`
@@ -63,22 +90,53 @@ const InfoSection = styled.section`
   margin-top: 2rem;
   margin-bottom: 2rem;
   flex-wrap: wrap;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    text-align: center;
+  }
 `;
 
 const InfoItem = styled.div`
   margin: 0 1rem;
   display: flex;
   align-items: center;
+
+  @media (max-width: 768px) {
+    margin: 0.5rem 0;
+  }
 `;
 
 const StyledLink = styled.a`
-  color: inherit;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
   text-decoration: none;
-  margin-left: 0.5rem;
 
   &:hover {
-    text-decoration: underline;
+    background-color: white;
+    color: #282c34;
   }
+`;
+
+const LinkedInLink = styled(StyledLink)`
+color: #211f1f;
+
+
+  &:hover {
+
+    color: #0e76a8;
+  }
+`;
+
+const GitHubLink = styled(StyledLink)`
+  color: #211f1f;
+
+
 `;
 
 const Home = () => (
@@ -88,8 +146,9 @@ const Home = () => (
         <BigHeader>Jhon Lloyd L. Borlagdan</BigHeader>
         <SubHeader>Web Developer</SubHeader>
         <Paragraph>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non libero nec felis suscipit vehicula.
+          Good day! I am a web developer specializing in front-end and back-end technologies for the web. With a background in ERP development and web development, I bring my experience in creating scalable and efficient web applications that are tailored to my business needs.
         </Paragraph>
+        <StyledLink href="/projects">View my projects and experience</StyledLink>
       </LeftSection>
       <RightSection>
         <Image src={profileImage} alt="Profile" />
@@ -98,19 +157,19 @@ const Home = () => (
     <InfoSection>
       <InfoItem>
         <FaEnvelope />
-        <span>Email: jhon@example.com</span>
+        <span>jhonlloydborlagdan8@example.com</span>
       </InfoItem>
       <InfoItem>
         <FaPhone />
-        <span>Contact: 123-456-7890</span>
+        <span>09203614524</span>
       </InfoItem>
       <InfoItem>
         <FaLinkedin />
-        <StyledLink href="https://www.linkedin.com/in/jhon-lloyd-borlagdan">Jhon Lloyd Borlagdan</StyledLink>
+        <LinkedInLink href="https://www.linkedin.com/in/jhon-lloyd-borlagdan">Linkedin</LinkedInLink>
       </InfoItem>
       <InfoItem>
         <FaGithub />
-        <StyledLink href="https://github.com/jhonlloyd">jhonlloyd</StyledLink>
+        <GitHubLink href="https://github.com/jhonlloyd">Github</GitHubLink>
       </InfoItem>
     </InfoSection>
   </div>
