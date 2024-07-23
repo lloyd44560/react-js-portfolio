@@ -3,8 +3,8 @@ import styled from "styled-components";
 
 // Import images from src/assets
 import MazeGameImage from "../assets/image/maze-game.png";
-import BankingSystemImage from "../assets/image/profile.png";
-import FacultyManagementImage from "../assets/image/profile.png";
+import BankingSystemImage from "../assets/image/TECHBANK2.png";
+import FacultyManagementImage from "../assets/image/PUPCES.png";
 import USAPImage from "../assets/image/profile.png";
 import ComplaintManagementImage from "../assets/image/profile.png";
 import ProductRecommendationImage from "../assets/image/profile.png";
@@ -105,7 +105,7 @@ const Projects = () => (
         <ProjectImage src={FacultyManagementImage} alt="Project 3" />
         <ProjectDescription>
           <ProjectTitle>
-            <ProjectLink href="https://example.com/faculty-management" target="_blank" rel="noopener noreferrer">
+            <ProjectLink href="https://pupsces.vercel.app/" target="_blank" rel="noopener noreferrer">
               Faculty Management System
             </ProjectLink>
           </ProjectTitle>
@@ -146,8 +146,8 @@ const Projects = () => (
         <ProjectImage src={ProductRecommendationImage} alt="Project 3" />
         <ProjectDescription>
           <ProjectTitle>
-            <ProjectLink href="https://example.com/product-recommendation" target="_blank" rel="noopener noreferrer">
-              Product Recommendation System
+            <ProjectLink href="https://luxury-raindrop-022ff0.netlify.app/home" target="_blank" rel="noopener noreferrer">
+              Budget Calculator
             </ProjectLink>
           </ProjectTitle>
           <ProjectText>
