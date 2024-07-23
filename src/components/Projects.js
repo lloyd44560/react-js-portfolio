@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 // Import images from src/assets
-import MazeGameImage from "../assets/image/Coffee.png";
+import MazeGameImage from "../assets/image/maze-game.png";
 import BankingSystemImage from "../assets/image/profile.png";
 import FacultyManagementImage from "../assets/image/profile.png";
 import USAPImage from "../assets/image/profile.png";
