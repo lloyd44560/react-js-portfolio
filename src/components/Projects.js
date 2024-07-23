@@ -79,7 +79,7 @@ const Projects = () => (
         <ProjectImage src={MazeGameImage} alt="Project 1" />
         <ProjectDescription>
           <ProjectTitle>
-            <ProjectLink href="https://example.com/maze-game" target="_blank" rel="noopener noreferrer">
+            <ProjectLink href="https://2d-react-maze-game.netlify.app/" target="_blank" rel="noopener noreferrer">
               2D Maze Game
             </ProjectLink>
           </ProjectTitle>
