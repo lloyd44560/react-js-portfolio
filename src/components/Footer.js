@@ -10,7 +10,7 @@ const FooterContainer = styled.footer`
 
 const Footer = () => (
   <FooterContainer>
-    <p>&copy; 2024 My Portfolio</p>
+    <p>&copy; 2024 - Script Sorcerer</p>
   </FooterContainer>
 );
 

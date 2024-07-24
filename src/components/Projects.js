@@ -1,77 +1,36 @@
 import React from "react";
-import styled from "styled-components";
 
-// Import images from src/assets
+// Images 
 import MazeGameImage from "../assets/image/maze-game.png";
 import BankingSystemImage from "../assets/image/TECHBANK2.png";
 import FacultyManagementImage from "../assets/image/PUPCES.png";
-import USAPImage from "../assets/image/profile.png";
-import ComplaintManagementImage from "../assets/image/profile.png";
-import ProductRecommendationImage from "../assets/image/profile.png";
+// import USAPImage from "../assets/image/profile.png";
+// import ComplaintManagementImage from "../assets/image/profile.png";
+// import ProductRecommendationImage from "../assets/image/profile.png";
 import TypingGameImage from "../assets/image/Typing.PNG";
 import ShoppingWebsiteImage from "../assets/image/Shopping.png";
 import MobileAppLandingImage from "../assets/image/MOBHASS.PNG";
 import CoffeeWebsiteImage from "../assets/image/Coffee.png";
 
-const ProjectsContainer = styled.div`
-  padding: 2rem;
-  text-align: center;
-`;
+import {
+  ProjectsContainer,
+  ProjectGrid,
+  ProjectCard,
+  ProjectImage,
+  ProjectDescription,
+  ProjectTitle,
+  ProjectLink,
+  ProjectText,
+} from "../StyledComponents";
 
-const ProjectGrid = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
-  margin-top: 2rem;
-`;
-
-const ProjectCard = styled.div`
-  width: 300px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease-in-out;
-
-  &:hover {
-    transform: scale(1.05);
-  }
-`;
-
-const ProjectImage = styled.img`
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-`;
-
-const ProjectDescription = styled.div`
-  padding: 1rem;
-  background-color: #f5f5f5;
-`;
-
-const ProjectTitle = styled.h3`
-  margin: 0;
-  font-size: 1.5rem;
-`;
-
-const ProjectLink = styled.a`
-  text-decoration: none;
-  color: inherit;
-
-  &:hover {
-    text-decoration: underline;
-  }
-`;
-
-const ProjectText = styled.p`
-  margin: 0.5rem 0 0;
-  font-size: 1rem;
-  color: #333;
-`;
 
 const Projects = () => (
   <ProjectsContainer>
+
+  <h2>My Professional Experience</h2>
+  <p>This is a section where you can make me a 3 div panels that indicates the types of systems i worked with in my Odoo ERP development experience. The divs can have like ab icon for example icon or image in accounting and a space for explanation.</p>
+
+
     <h2>My Projects</h2>
     <p>This is a section where you can showcase your projects.</p>
     <ProjectGrid>
@@ -115,7 +74,7 @@ const Projects = () => (
         </ProjectDescription>
       </ProjectCard>
     </ProjectGrid>
-    <ProjectGrid>
+    {/* <ProjectGrid>
       <ProjectCard>
         <ProjectImage src={USAPImage} alt="Project 1" />
         <ProjectDescription>
@@ -155,7 +114,7 @@ const Projects = () => (
           </ProjectText>
         </ProjectDescription>
       </ProjectCard>
-    </ProjectGrid>
+    </ProjectGrid> */}
     <h2>Sample Web Pages</h2>
     <ProjectGrid>
       <ProjectCard>
