@@ -25,7 +25,7 @@ const Header = () => {
         <NavLink to="/" onClick={() => setMenuOpen(false)}>Home</NavLink>
         <NavLink to="/projects" onClick={() => setMenuOpen(false)}>Projects</NavLink>
         <NavLink to="/about" onClick={() => setMenuOpen(false)}>About</NavLink>
-        <NavLink to="/contact" onClick={() => setMenuOpen(false)}>Contact</NavLink>
+        {/* <NavLink to="/contact" onClick={() => setMenuOpen(false)}>Contact</NavLink> */}
       </NavMenu>
     </Nav>
   );

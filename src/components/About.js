@@ -24,6 +24,55 @@ const About = () => (
           <SubSectionIcon>
             <FaBriefcase />
           </SubSectionIcon>
+         Education
+        </SubSectionTitle>
+        <ParagraphAbout>
+          I graduated with a Bachelor's Degree in Information Security in Quezon City University in 2022. For my final year, we developed a Home Automation and Security System
+          where we used IOT technologies to allow users to access their home wherever they were . 
+        </ParagraphAbout>
+      </SubSection>
+      <SubSection>
+        <SubSectionTitle>
+          <SubSectionIcon>
+            <FaCode />
+          </SubSectionIcon>
+         Personal Side
+        </SubSectionTitle>
+        <SkillsList>
+          <SkillItem>
+            <SkillIcon>
+              <FaCode />
+            </SkillIcon>
+            JavaScript (React, Node.js)
+          </SkillItem>
+          <SkillItem>
+            <SkillIcon>
+              <FaCode />
+            </SkillIcon>
+            HTML & CSS
+          </SkillItem>
+          <SkillItem>
+            <SkillIcon>
+              <FaCode />
+            </SkillIcon>
+            Python (Django, Flask)
+          </SkillItem>
+          <SkillItem>
+            <SkillIcon>
+              <FaCode />
+            </SkillIcon>
+            SQL & NoSQL Databases
+          </SkillItem>
+        </SkillsList>
+      </SubSection>
+    </SubSectionContainer>
+
+    <SubSectionContainer>
+      <SubSection>
+        <SubSectionTitle>
+          <SubSectionIcon>
+            <FaBriefcase />
+          </SubSectionIcon>
           Professional Side
         </SubSectionTitle>
         <ParagraphAbout>

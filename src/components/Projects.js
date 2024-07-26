@@ -12,6 +12,12 @@ import ShoppingWebsiteImage from "../assets/image/Shopping.png";
 import MobileAppLandingImage from "../assets/image/MOBHASS.PNG";
 import CoffeeWebsiteImage from "../assets/image/Coffee.png";
 
+import InventoryIcon from "../assets/image/inventory.png";
+import HRIcon from "../assets/image/HR.jpg";
+import AccountingIcon from "../assets/image/Accounting.png";
+import AttendanceIcon from "../assets/image/attendance.png";
+import LoanIcon from "../assets/image/loan.png";
+import PayrollIcon from "../assets/image/payroll.png";
 import {
   ProjectsContainer,
   ProjectGrid,
@@ -21,6 +27,11 @@ import {
   ProjectTitle,
   ProjectLink,
   ProjectText,
+  ExperienceContainer,
+  ExperiencePanel,
+  ExperienceIcon,
+  ExperienceDescription,
+
 } from "../StyledComponents";
 
 
@@ -28,8 +39,54 @@ const Projects = () => (
   <ProjectsContainer>
 
   <h2>My Professional Experience</h2>
-  <p>This is a section where you can make me a 3 div panels that indicates the types of systems i worked with in my Odoo ERP development experience. The divs can have like ab icon for example icon or image in accounting and a space for explanation.</p>
+    <ExperienceContainer>
+      <ExperiencePanel>
+        <ExperienceIcon src={AccountingIcon} alt="Accounting Icon" />
+        <h3>Accounting</h3>
+        <ExperienceDescription>
+          Developed and customized accounting modules including invoicing, billing, and financial reporting.
+        </ExperienceDescription>
+      </ExperiencePanel>
+      <ExperiencePanel>
+        <ExperienceIcon src={InventoryIcon} alt="Inventory Icon" />
+        <h3>Inventory Management</h3>
+        <ExperienceDescription>
+            Contributed to an inventory management system made for a warehouse storing Sky Cable products. I worked with features such as product registration, stock management, reporting, barcode integration, etc.
+        </ExperienceDescription>
+      </ExperiencePanel>
+      <ExperiencePanel>
+        <ExperienceIcon src={HRIcon} alt="HR Icon" />
+        <h3>Human Resources</h3>
+        <ExperienceDescription>
+            Contributed to a Human Resources Management System that has features such as HR Dashboard, Multi-Company, Employee Management, Automation on Leave Request, and more.
 
+        </ExperienceDescription>
+      </ExperiencePanel>
+    </ExperienceContainer>
+
+    <ExperienceContainer>
+      <ExperiencePanel>
+        <ExperienceIcon src={AttendanceIcon} alt="Accounting Icon" />
+        <h3>Attendance Module for Company</h3>
+        <ExperienceDescription>
+          Contributed to the Attendance Module that serves as the application to monitor employees check-in and check-out times in real time, produce reports of employee hours, and access employee overtime hours.
+        </ExperienceDescription>
+      </ExperiencePanel>
+      <ExperiencePanel>
+        <ExperienceIcon src={LoanIcon} alt="Inventory Icon" />
+        <h3>Loan Management</h3>
+        <ExperienceDescription>
+        Contributed to the Loan Management System that was made for configuring loan policies, assigning user access for each user, and the verification process of the loan up to the disbursement to the employee as well as the accounting side.
+        </ExperienceDescription>
+      </ExperiencePanel>
+      <ExperiencePanel>
+        <ExperienceIcon src={PayrollIcon} alt="HR Icon" />
+        <h3>Payroll</h3>
+        <ExperienceDescription>
+          Enhanced HR modules for employee management, payroll, attendance tracking, and recruitment processes.
+        </ExperienceDescription>
+      </ExperiencePanel>
+    </ExperienceContainer>
 
     <h2>My Projects</h2>
     <p>This is a section where you can showcase your projects.</p>

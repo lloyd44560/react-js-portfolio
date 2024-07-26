@@ -269,6 +269,35 @@ export const ProjectText = styled.p`
   color: #333;
 `;
 
+
+export const ExperienceContainer = styled.div`
+  display: flex;
+  justify-content: space-around;
+  margin: 2rem 0;
+`;
+
+export const ExperiencePanel = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  background-color: #f9f9f9;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+`;
+
+export const ExperienceIcon = styled.img`
+  width: 64px;
+  height: 64px;
+  margin-bottom: 1rem;
+`;
+
+export const ExperienceDescription = styled.p`
+  font-size: 1rem;
+  color: #333;
+`;
 // About Us Components 
 
 
