@@ -82,7 +82,7 @@ const Projects = () => (
     </ExperienceContainer>
 
     <h2>My Projects</h2>
-    <p>This is a section where you can showcase your projects.</p>
+    <p>This is a section that displays my previous side projects.</p>
     <ProjectGrid>
       <ProjectCard>
         <ProjectImage src={MazeGameImage} alt="Project 1" />
