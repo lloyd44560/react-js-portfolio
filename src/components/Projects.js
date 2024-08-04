@@ -114,12 +114,12 @@ const Projects = () => (
         <ProjectImage src={FacultyManagementImage} alt="Project 3" />
         <ProjectDescription>
           <ProjectTitle>
-            <ProjectLink href="https://example.com/faculty-management" target="_blank" rel="noopener noreferrer">
+            <ProjectLink href="https://pupsces.vercel.app/" target="_blank" rel="noopener noreferrer">
               Faculty Management System
             </ProjectLink>
           </ProjectTitle>
           <ProjectText>
-            A Faculty Management System made with ASP.net MVC and MSSQL for database used in the university to monitor the faculty assigned in a campus.
+            A Faculty Management System made with Reactjs and Express for backend used in the university to monitor the faculty assigned in a campus and the student records.
           </ProjectText>
         </ProjectDescription>
       </ProjectCard>
@@ -127,7 +127,7 @@ const Projects = () => (
         <ProjectImage src={TypingGameImage} alt="Project 4" />
         <ProjectDescription>
           <ProjectTitle>
-            <ProjectLink href="https://example.com/typing-game" target="_blank" rel="noopener noreferrer">
+            <ProjectLink href="https://lloyd44560.github.io/Typing-Game/" target="_blank" rel="noopener noreferrer">
               Typing Game
             </ProjectLink>
           </ProjectTitle>
@@ -140,7 +140,7 @@ const Projects = () => (
         <ProjectImage src={ShoppingWebsiteImage} alt="Project 5" />
         <ProjectDescription>
           <ProjectTitle>
-            <ProjectLink href="https://example.com/shopping-website" target="_blank" rel="noopener noreferrer">
+            <ProjectLink href="https://lloyd44560.github.io/Ecommerce/" target="_blank" rel="noopener noreferrer">
               Shopping Website
             </ProjectLink>
           </ProjectTitle>
@@ -153,7 +153,7 @@ const Projects = () => (
         <ProjectImage src={MobileAppLandingImage} alt="Project 6" />
         <ProjectDescription>
           <ProjectTitle>
-            <ProjectLink href="https://example.com/mobile-app-landing" target="_blank" rel="noopener noreferrer">
+            <ProjectLink href="https://lloyd44560.github.io/Mobhass/" target="_blank" rel="noopener noreferrer">
               Mobile App Landing Page
             </ProjectLink>
           </ProjectTitle>
@@ -166,7 +166,7 @@ const Projects = () => (
         <ProjectImage src={CoffeeWebsiteImage} alt="Project 7" />
         <ProjectDescription>
           <ProjectTitle>
-            <ProjectLink href="https://example.com/coffee-website" target="_blank" rel="noopener noreferrer">
+            <ProjectLink href="https://lloyd44560.github.io/Coffee_Shop/" target="_blank" rel="noopener noreferrer">
               Coffee Website
             </ProjectLink>
           </ProjectTitle>
