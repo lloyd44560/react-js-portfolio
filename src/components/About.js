@@ -1,6 +1,6 @@
 import React from "react";
 
-import { FaBriefcase, FaCode } from "react-icons/fa";
+import { FaBriefcase, FaCode, FaBook, FaPersonBooth} from "react-icons/fa";
 
 import {
   AboutContainer,
@@ -22,7 +22,7 @@ const About = () => (
       <SubSection>
         <SubSectionTitle>
           <SubSectionIcon>
-            <FaBriefcase />
+            <FaBook />
           </SubSectionIcon>
          Education
         </SubSectionTitle>
@@ -34,35 +34,15 @@ const About = () => (
       <SubSection>
         <SubSectionTitle>
           <SubSectionIcon>
-            <FaCode />
+            < FaPersonBooth />
           </SubSectionIcon>
          Personal Side
         </SubSectionTitle>
         <SkillsList>
           <SkillItem>
-            <SkillIcon>
-              <FaCode />
-            </SkillIcon>
-            JavaScript (React, Node.js)
+        Hi there! I am a passionate developer based in Quezon City. With a background in ERP development, my personality is that I love to learn new things and take on challenges. I love turning ideas into functional code with a help of a cup of coffee and my adorable and fluffy cat. Let’s build something amazing together!
           </SkillItem>
-          <SkillItem>
-            <SkillIcon>
-              <FaCode />
-            </SkillIcon>
-            HTML & CSS
-          </SkillItem>
-          <SkillItem>
-            <SkillIcon>
-              <FaCode />
-            </SkillIcon>
-            Python (Django, Flask)
-          </SkillItem>
-          <SkillItem>
-            <SkillIcon>
-              <FaCode />
-            </SkillIcon>
-            SQL & NoSQL Databases
-          </SkillItem>
+         
         </SkillsList>
       </SubSection>
     </SubSectionContainer>
@@ -76,8 +56,8 @@ const About = () => (
           Professional Side
         </SubSectionTitle>
         <ParagraphAbout>
-          I am a dedicated web developer with over 2 years of experience in Odoo ERP development. I specialize in web development with a strong background in backend technologies. 
-          My passion is to build efficient and scalable web applications that provide seamless user experiences and solves customer problems.
+          I am a dedicated Software Engineer with over 2 years of experience in Odoo ERP development.  
+          My experience is in developing business applications for companies like HRMS, Inventory Management System, Accounting and Loan Management System.
         </ParagraphAbout>
       </SubSection>
       <SubSection>
@@ -92,19 +72,20 @@ const About = () => (
             <SkillIcon>
               <FaCode />
             </SkillIcon>
-            JavaScript (React, Node.js)
-          </SkillItem>
-          <SkillItem>
-            <SkillIcon>
-              <FaCode />
-            </SkillIcon>
-            HTML & CSS
-          </SkillItem>
-          <SkillItem>
-            <SkillIcon>
-              <FaCode />
-            </SkillIcon>
             Python (Django, Flask)
+            
+          </SkillItem>
+          <SkillItem>
+            <SkillIcon>
+              <FaCode />
+            </SkillIcon>
+            HTML & PHP & CSS
+          </SkillItem>
+          <SkillItem>
+            <SkillIcon>
+              <FaCode />
+            </SkillIcon>
+            JavaScript (React, Node.js)
           </SkillItem>
           <SkillItem>
             <SkillIcon>

@@ -83,6 +83,7 @@ export const MenuIcon = styled.div`
 
 
 // App
+
 export const AppContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -95,51 +96,53 @@ export const ContentWrapper = styled.div`
 
 export const HeroSection = styled.section`
   display: flex;
-  justify-content: space-around;
+  flex-direction: column-reverse;
+  justify-content: center;
   align-items: center;
   padding: 2rem;
   background-color: #282c34;
   color: white;
 
-  @media (max-width: 768px) {
-    flex-direction: column;
-    padding: 1rem;
+  @media (min-width: 769px) {
+    flex-direction: row;
   }
 `;
 
 export const LeftSection = styled.div`
-  max-width: 45%;
+  max-width: 100%;
+  text-align: center;
 
-  @media (max-width: 768px) {
-    max-width: 100%;
-    text-align: center;
+  @media (min-width: 769px) {
+    max-width: 45%;
+    text-align: left;
   }
 `;
 
 export const RightSection = styled.div`
-  max-width: 45%;
+  max-width: 60%;
+  margin-top: 1rem;
 
-  @media (max-width: 768px) {
-    max-width: 60%;
-    margin-top: 1rem;
+  @media (min-width: 769px) {
+    max-width: 45%;
+    margin-top: 0;
   }
 `;
 
 export const BigHeader = styled.h1`
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: bold;
 
-  @media (max-width: 768px) {
-    font-size: 2rem;
+  @media (min-width: 769px) {
+    font-size: 3rem;
   }
 `;
 
 export const SubHeader = styled.h2`
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin-top: 0.5rem;
 
-  @media (max-width: 768px) {
-    font-size: 1.2rem;
+  @media (min-width: 769px) {
+    font-size: 1.5rem;
   }
 `;
 
@@ -148,36 +151,39 @@ export const Paragraph = styled.p`
 `;
 
 export const Image = styled.img`
-  max-width: 80%;
+  max-width: 100%;
   height: auto;
   border-radius: 50%;
 
-  @media (max-width: 768px) {
-    max-width: 100%;
+  @media (min-width: 769px) {
+    max-width: 80%;
   }
 `;
 
 export const InfoSection = styled.section`
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
   margin-top: 2rem;
   margin-bottom: 2rem;
-  flex-wrap: wrap;
 
-  @media (max-width: 768px) {
-    flex-direction: column;
-    text-align: center;
+  @media (min-width: 769px) {
+    flex-direction: row;
+    justify-content: center;
   }
 `;
 
 export const InfoItem = styled.div`
-  margin: 0 1rem;
+  margin: 0.5rem 0;
   display: flex;
   align-items: center;
 
-  @media (max-width: 768px) {
-    margin: 0.5rem 0;
+  @media (min-width: 769px) {
+    margin: 0 1rem;
+  }
+
+  span {
+    margin-left: 0.5rem;
   }
 `;
 
@@ -198,20 +204,24 @@ export const StyledLink = styled.a`
 `;
 
 export const LinkedInLink = styled(StyledLink)`
-  color: #211f1f;
+  color: #0e76a8;
 
   &:hover {
-    color: #0e76a8;
+    color: white;
+    background-color: #0e76a8;
   }
 `;
 
 export const GitHubLink = styled(StyledLink)`
   color: #211f1f;
+
+  &:hover {
+    color: white;
+    background-color: #211f1f;
+  }
 `;
 
-
 // Projects
-
 export const ProjectsContainer = styled.div`
   padding: 2rem;
   text-align: center;
@@ -269,9 +279,9 @@ export const ProjectText = styled.p`
   color: #333;
 `;
 
-
 export const ExperienceContainer = styled.div`
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   margin: 2rem 0;
 `;
@@ -286,6 +296,11 @@ export const ExperiencePanel = styled.div`
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
+  margin: 1rem 0;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 export const ExperienceIcon = styled.img`
@@ -298,8 +313,8 @@ export const ExperienceDescription = styled.p`
   font-size: 1rem;
   color: #333;
 `;
-// About Us Components 
 
+// About Us Components
 
 export const AboutContainer = styled.div`
   padding: 2rem;
@@ -368,7 +383,6 @@ export const SkillIcon = styled.span`
   margin-right: 0.5rem;
   color: #61dafb;
 `;
-
 
 // Contacts Component
 
