@@ -19,6 +19,7 @@ import {
   Paragraph,
   Image,
   InfoSection,
+  
   InfoItem,
   StyledLink,
   LinkedInLink,
