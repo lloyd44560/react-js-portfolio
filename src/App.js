@@ -34,7 +34,7 @@ const Home = () => (
         <Paragraph>
           Good day! I am a web developer specializing in front-end and back-end technologies for the web. With a background in ERP development and web development, I bring my experience in creating scalable and efficient web applications that are tailored to my business needs.
         </Paragraph>
-        <StyledLink href="https://script-sorcerer-portfolio.netlify.app/projects">View my projects and experience</StyledLink>
+        <StyledLink href="/projects">View my projects and experience</StyledLink>
       </LeftSection>
       <RightSection>
         <Image src={profileImage} alt="Profile" />
